@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 const cricketRoutes = require("./routes/cricketRoutes");
 const cmsGcpRoutes = require("./routes/cmsGcpRoutes");
 const cmsAzureRoutes = require("./routes/cmsAzureRoutes");
@@ -17,5 +18,9 @@ app.use("/cms/azure", cmsAzureRoutes);
 app.use("/chat", llmRoutes);
 app.use("/chatbot", chatbotRoutes);
 app.use("/firebase", firebaseRoutes);
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/home.html"));
+});
 
 module.exports = app;

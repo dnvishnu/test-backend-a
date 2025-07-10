@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
-const { llmController } = require("../controllers/llmController");
+const { llmHandler  } = require("../controllers/llmController");
 
-router.post("/llm", llmController.llmHandler);
+router.post("/llm", llmHandler);
 
 module.exports = router;

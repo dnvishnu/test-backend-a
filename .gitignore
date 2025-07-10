@@ -26,3 +26,6 @@ build/
 # Optional: coverage and temp
 coverage/
 tmp/
+
+#keys
+keys/

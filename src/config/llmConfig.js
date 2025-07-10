@@ -1,5 +1,5 @@
 const OpenAI = require("openai");
-const { GoogleGenerativeAI } = require("google-generative-ai");
+const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,

@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const cmsGcpController = require("../controllers/cmsGcpController");
+const cmsAzureController = require("../controllers/cmsAzureController");
 
-router.post("/create-folder", cmsGcpController.createFolder);
+router.post("/create-folder", cmsAzureController.createFolder);
 router.get("/list-folder/:bucketName", cmsAzureController.listFolder);
 router.get("/list-files-combined/:bucketName", cmsAzureController.listFilesCombined);
 router.post("/edit-item", cmsAzureController.editItem);
