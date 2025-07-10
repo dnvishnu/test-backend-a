@@ -6,6 +6,7 @@ const cmsGcpRoutes = require("./routes/cmsGcpRoutes");
 const cmsAzureRoutes = require("./routes/cmsAzureRoutes");
 const llmRoutes = require("./routes/llmRoutes");
 const chatbotRoutes = require("./routes/chatbotRoutes");
+const stocksRoutes = require("./routes/stocksRoutes");
 const firebaseRoutes = require("./routes/firebaseRoutes");
 
 const app = express();
@@ -17,6 +18,7 @@ app.use("/cms/gcp", cmsGcpRoutes);
 app.use("/cms/azure", cmsAzureRoutes);
 app.use("/chat", llmRoutes);
 app.use("/chatbot", chatbotRoutes);
+app.use("/stocks", stocksRoutes);
 app.use("/firebase", firebaseRoutes);
 
 app.get("/", (req, res) => {
