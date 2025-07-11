@@ -3,34 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kreate Backend - Welcome</title>
+    <title>Kreate Backend</title>
+    <link
+      rel="icon"
+      href="https://storage.googleapis.com/kreatewebsites-assets/images/dataknobs-logo.webp"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-<body class="bg-white min-h-screen flex items-center justify-center">
-  <div class="w-full max-w-4xl px-6 text-center">
-    <div class="flex justify-center mb-4">
-      <img
-        class="h-14 w-auto"
-        src="https://storage.googleapis.com/kreatewebsites-assets/images/dataknobs-logo.webp"
-        alt="DataKnobs Logo"
-      />
-    </div>
-    <p class="text-base font-semibold text-indigo-600">Backend Running</p>
-    <h1 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-      Welcome to Kreate Backend
-    </h1>
-    <p class="mt-2 text-base text-gray-500">
-      This backend powers <strong>KreateWebsites</strong>, <strong>KreateBots</strong>, and other GenAI tools by <strong>DataKnobs</strong>.
-    </p>
-    <div class="mt-6">
-      <a
-        href="https://www.kreatewebsites.com"
-        class="text-base font-medium text-indigo-600 hover:text-indigo-500"
+  <body class="bg-gray-50 min-h-screen flex items-center justify-center">
+    <div
+      class="flex flex-col sm:flex-row w-full max-w-5xl shadow-lg rounded-lg overflow-hidden bg-white"
+    >
+      <!-- Sidebar Panel -->
+      <div
+        class="bg-indigo-600 text-white w-full sm:w-1/3 p-6 flex flex-col justify-between"
       >
-        Visit KreateWebsites &rarr;
-      </a>
-    </div>
-  </div>
-</body>
+        <div>
+          <img
+            class="h-12 mb-6"
+            src="https://storage.googleapis.com/kreatewebsites-assets/images/dataknobs-logo.webp"
+            alt="DataKnobs Logo"
+          />
+          <h2 class="text-lg font-semibold">System Status</h2>
+          <p class="mt-2 text-sm text-indigo-100">
+            Kreate Backend is fully operational
+          </p>
+        </div>
+        <div class="mt-10 text-sm">
+          <p class="text-indigo-200">Powered by <strong>DataKnobs</strong></p>
+          <p class="text-indigo-300 mt-1">
+            Serving GenAI tools, websites & bots.
+          </p>
+        </div>
+      </div>
 
+      <!-- Main Panel -->
+      <div class="w-full sm:w-2/3 p-8">
+        <h1 class="text-3xl font-extrabold text-gray-900">
+          🧠 Boot Sequence Complete
+        </h1>
+        <p class="mt-4 text-gray-600 leading-relaxed">
+          Welcome to the command center of <strong>Kreate</strong>.<br />
+          The backend is live, endpoints are stable, and our AI engines are at
+          your service.
+        </p>
+
+        <div
+          class="mt-6 bg-gray-100 rounded-md p-4 font-mono text-sm text-gray-700"
+        >
+          <p>
+            <span class="text-green-600">✔</span> Loading environment variables
+          </p>
+          <p>
+            <span class="text-green-600">✔</span> Connecting to inference engine
+          </p>
+          <p><span class="text-green-600">✔</span> API Gateway ready</p>
+          <p><span class="text-green-600">✔</span> GenAI services online</p>
+          <p><span class="text-green-600">✔</span> Ready to serve creativity</p>
+        </div>
+
+        <div class="mt-8">
+          <a
+            href="https://www.kreatewebsites.com"
+            class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-500 transition"
+          >
+            Launch KreateWebsites &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
