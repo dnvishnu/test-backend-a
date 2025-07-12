@@ -37,7 +37,7 @@ async function callOpenAI(promptChain, model) {
       });
 
       const content = response.choices?.[0]?.message?.content?.trim() || "";
-      return `Step ${index + 1}:\n${content}`;
+      return `${content}`;
     })
   );
 
@@ -65,7 +65,7 @@ async function callAzureOpenAI(promptChain, model) {
       );
 
       const content = response.data?.choices?.[0]?.message?.content?.trim() || "";
-      return `Step ${index + 1}:\n${content}`;
+      return `${content}`;
     })
   );
 
@@ -93,7 +93,7 @@ async function callGemini(promptChain, model) {
       const response = await result.response;
       const text = response.text().trim();
 
-      return `Step ${index + 1}:\n${text}`;
+      return `${text}`;
     })
   );
 
